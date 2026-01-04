@@ -1,7 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { cn } from '@/lib/Utils';
 import Socials from '@/components/Socials';
-import { Github, Linkedin, X } from 'lucide-react';
 import {FaLinkedin, FaTiktok} from 'react-icons/fa';
 import { FaUpwork, FaXTwitter } from 'react-icons/fa6';
 
@@ -28,12 +27,12 @@ const HeroSec = () => {
       }
     ]
   return (
-    <div>
+    <section>
       <div className='text-center text-text-primary relative'>
       <h1 className='text-2xl font-bold leading-relaxed sm:text-4xl md:text-4xl lg:text-5xl'>Hi, I'm Mark Ogbonna</h1>
-      <p className='text-base sm:text-xl md:text-2xl mb-7.5 lg:mb-10'>I'm a <span className={cn("relative inline-block text-lg text-accent-primary",
+      <p className='text-base sm:text-xl md:text-2xl mb-7.5 lg:mb-10'>I'm a <span className={cn("relative inline-block text-accent-primary",
         "before:-bottom-1 before:content-[''] before:w-full before:h-[2px] before:bg-accent-primary before:absolute",
-        "sm:text-xl md:text-2xl"
+        "text-base sm:text-xl md:text-2xl"
       )}>
         <Typewriter 
         cursor={true} 
@@ -52,7 +51,7 @@ const HeroSec = () => {
           {socials.map((social, i)=> <Socials link={social.link} icon={social.icon} key={i}/>)}
       </div>
 
-    </div>
+    </section>
     
   )
 }

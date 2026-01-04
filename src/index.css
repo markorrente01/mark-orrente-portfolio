@@ -2,23 +2,19 @@
 
 :root {
         --bg-primary: 0, 0%, 100%;
-        --bg-secondary: 210, 14%, 96%;
+        --bg-secondary: 243, 245, 246;
         --bg-card: 40, 56%, 97%;
-        --text-primary: 0, 0%, 13%;
+        --text-primary: 33, 33, 33;
         --text-secondary: 0, 0%, 31%;
         --accent-primary: 359, 100%, 65%;
-        --accent-secondary: 0, 26%, 14%;
-        --gradientA: 210, 14%, 96%, 0;
-        --gradientB: 210, 14%, 96%, 0.4;
     }
 .dark {
         --bg-primary: 0, 0%, 2%;
-        --bg-secondary: 0, 0%, 8%;
+        --bg-secondary: 20, 20, 20;
         --bg-card: 0, 0%, 11%;
-        --text-primary: 0, 0%, 100%;
+        --text-primary: 255, 255, 255;
         --text-secondary: 0, 0%, 85%;
         --accent-primary: 359, 100%, 65%;
-        --accent-secondary: 0, 26%, 14%;
     }
     *{
         @apply box-border;
@@ -32,12 +28,11 @@ body{
     }
 @theme {
     --color-bg-primary: hsl(var(--bg-primary));
-    --color-bg-secondary: hsl(var(--bg-secondary));
+    --color-bg-secondary: rgb(var(--bg-secondary));
     --color-bg-card: hsl(var(--bg-card));
-    --color-text-primary: hsl(var(--text-primary));
+    --color-text-primary: rgb(var(--text-primary));
     --color-text-secondary: hsl(var(--text-secondary));
     --color-accent-primary: hsl(var(--accent-primary));
-    --color-accent-secondary: hsl(var(--accent-secondary));
 
     --animate-slideInUp: slideInUp 1s ease-out forwards;
 }
@@ -59,10 +54,9 @@ body{
     transform: scaleY(2px);
     transition: transform, background 0.2s ease-in;
 }
-
-@utility center{
-    @apply top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
-}
 @utility socialIcon{
     @apply text-text-primary w-5 h-5 md:w-6 md:h-6;
+}
+@utility heading{
+    @apply text-text-primary font-semibold text-2xl leading-tight sm:text-4xl lg:text-5xl;
 }
