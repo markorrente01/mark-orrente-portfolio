@@ -20,5 +20,4 @@ const MobileNav = ({setNavBarIsOpen, navLinks, activeSection}) => {
     </div>
   )
 }
-
 export default MobileNav;
