@@ -20,6 +20,7 @@ const Skills = () => {
         {name: 'Node.js', value: 90, category: 'Tools & Workflow'},
         {name: 'NPM & Yarn', value: 90, category: 'Tools & Workflow'},
         {name: 'Debugging & Error Handling', value: 83, category: 'Core Skills'},
+        {name: 'Figma to Code', value: 94, category: 'Styling & Ui'},
         
     ];
     const filteredSkills = activeCategory ? skillsInfo.filter(skill=>skill.category===activeCategory)
