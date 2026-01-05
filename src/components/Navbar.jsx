@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 import MobileNav from "@/components/MobileNav";
 import UseScrollSpy from "@/hooks/UseScrollSpy";
 import { cn } from "@/lib/Utils";
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="hidden text-text-primary text-lg md:flex gap-3 md:gap-5 lg:gap-6 xl:gap-10">
           {navLinks.map(link => <a 
             href={`#${link.id}`} key={link.id}
-            className={cn('py-2.5 transition-all duration-300 ease-out', 
+            className={cn('py-4 transition-all duration-300 ease-out', 
             activeSection === link.id ? 'text-accent-primary' : 'hover:text-accent-primary')}>
             {link.name}</a>)}
         </div>

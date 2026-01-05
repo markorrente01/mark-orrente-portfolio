@@ -1,6 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { cn } from '@/lib/Utils';
-import Socials from '@/components/Socials';
+import Socials from '@/components/ui/Socials';
 import {FaLinkedin, FaTiktok} from 'react-icons/fa';
 import { FaUpwork, FaXTwitter } from 'react-icons/fa6';
 

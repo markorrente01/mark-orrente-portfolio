@@ -1,9 +1,10 @@
-import { Header, SectionHeader } from '@/components/SectionHeader';
-import AbtBox from '@/components/AbtBox';
+import { Header, SectionHeader } from '@/components/ui/SectionHeader';
+import AbtBox from '@/components/ui/AbtBox';
 import { BsBriefcase } from 'react-icons/bs';
 import { IoSchoolOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { MdOutlineEventAvailable } from "react-icons/md";
+import Skills from '@/components/ui/Skills';
 
 const About = () => {
     const iconStyle = 'text-accent-primary w-6 h-6';
@@ -49,8 +50,7 @@ const About = () => {
         </div>
         
         <div>
-            <SectionHeader header='CORE SKILLS' />
-            <h2 className='heading mt-4 mb-6'>Technical Proficiency</h2>
+            <Skills />
         </div>
     </section>
   )
