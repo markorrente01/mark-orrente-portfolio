@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='min-h-screen'>
       <Navbar />
-      <main className='pt-73 mb-73' id='home'>
+      <main className='pt-70 mb-70' id='home'>
         <HeroSec />
       </main>
         <About />

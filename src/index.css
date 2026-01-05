@@ -60,3 +60,6 @@ body{
 @utility heading{
     @apply text-text-primary font-semibold text-2xl leading-tight sm:text-4xl lg:text-5xl;
 }
+@utility center{
+    @apply top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+}
