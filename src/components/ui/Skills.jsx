@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {cn} from "@/lib/Utils";
-import SkillSub from "./SkillSub";
+import SkillSub from "@/components/ui/SkillSub";
 
 const Skills = () => {
     const [activeCategory, setActiveCategory] = useState(null);

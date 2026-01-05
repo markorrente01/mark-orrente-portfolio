@@ -1,4 +1,4 @@
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@/components/ui/Progress";
 
 const SkillSub = ({skill}) => {
   return (
