@@ -23,7 +23,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-        @apply bg-bg-primary transition duration-200 ease-in;
+        @apply bg-bg-secondary transition duration-200 ease-in;
         font-feature-settings: "rlig" 1, "calt" 1;
     }
 @theme {
@@ -58,8 +58,24 @@ body{
     @apply text-text-primary w-5 h-5 md:w-6 md:h-6;
 }
 @utility heading{
-    @apply text-text-primary font-semibold text-2xl leading-tight sm:text-4xl lg:text-5xl;
+    @apply text-text-primary font-semibold text-2xl leading-tight sm:text-3xl lg:text-4xl;
 }
 @utility center{
     @apply top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+}
+@utility sectionCenter{
+    @apply pt-15 px-3.5 lg:px-25;
+}
+@utility cardGradient{
+   background-image:  repeating-linear-gradient(
+    -45deg,
+    color-mix(in hsl, var(--color-bg-card), transparent) 1px,
+    transparent 40px
+  ),
+  radial-gradient(
+  circle at bottom right,
+   color-mix(in hsl, var(--color-accent-primary), transparent),
+  transparent 60%
+);
+  background-size: contain;
 }

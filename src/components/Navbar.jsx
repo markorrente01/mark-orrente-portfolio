@@ -17,7 +17,7 @@ const Navbar = () => {
     ];
     const activeSection = UseScrollSpy(navLinks.map(link=>link.id))
   return (
-    <div className="md:px-6 lg:px-25 py-3 px-5 bg-bg-secondary/80 shadow-xl w-full fixed z-50">
+    <div className="md:px-6 lg:px-25 py-3 px-3.5 bg-bg-secondary/80 shadow-xl w-full fixed z-50">
       <nav className="flex justify-between items-center">
         <div className="flex items-center">
         <h1 className="text-text-primary text-3xl font-bold">ORTECH</h1>

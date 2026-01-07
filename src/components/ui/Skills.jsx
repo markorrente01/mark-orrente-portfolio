@@ -30,19 +30,19 @@ const Skills = () => {
     }
   return (
     <section>
-        <div className="flex flex-wrap justify-center gap-2.5 md:gap-3.5">
+        <div className="flex flex-wrap justify-center gap-2.5 md:gap-3.5 md:mb-4">
       {categories.map((category, index)=>{
         return (
             <button onClick={()=>handleFilter(category)} key={index} className={cn('rounded-md border border-text-secondary/12 text-text-primary py-2.5 px-4',
                 'transform transition-all duration-300 ease-out ', 'text-[0.85rem] sm:text-sm md:text-base',
-                 activeCategory === category || (category === 'All Skills' && activeCategory === null) ? 'bg-accent-primary' : '')}>
+                 activeCategory === category || (category === 'All Skills' && activeCategory === null) ? 'bg-accent-primary text-white' : '')}>
                     {category}
             </button>
         )
       })}
     </div>
 
-    <div className="grid md:grid-cols-2 md:gap-5">
+    <div className="grid md:grid-cols-2 md:gap-5.5">
         {filteredSkills.map((skill, index)=>{
           return (
             <SkillSub skill={skill} key={index} />

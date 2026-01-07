@@ -30,22 +30,23 @@ const About = () => {
             subHeading: 'Open to Work'
         }
     ];
+    const content = `
+                    I’m a detail-driven Frontend developer specializing in building clean, functional, 
+                    and conversion-focused websites. I enjoy turning complex requirements into 
+                    simple, scalable solutions and writing code that’s easy to maintain. Whether 
+                    it’s improving performance, or refining UI, I focus on results that actually 
+                    help businesses grow.
+                `;
   return (
-    <section id='about' className='bg-bg-secondary py-15 px-5 lg:px-25'>
+    <section id='about' className='sectionCenter'>
         <div>
-            <Header header='ABOUT ME' />
-            <h2 className='my-5 heading text-center'>
-                Transforming Ideas into Digital Reality
-            </h2>
-            <article className='text-text-secondary text-base sm:text-lg lg:px-45 text-center'>
-                I’m a detail-driven Frontend developer specializing in building clean, functional, 
-                and conversion-focused websites. I enjoy turning complex requirements into 
-                simple, scalable solutions and writing code that’s easy to maintain. Whether 
-                it’s improving performance, or refining UI, I focus on results that actually 
-                help businesses grow.
-            </article>
+            <Header 
+            header='ABOUT ME' 
+            subHeading='Transforming Ideas into Digital Reality' 
+            content={content}
+            />
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10 mb-15'>
             {aboutInfo.map((info, index)=><AbtBox key={index} icon={info.icon} heading={info.heading} subHeading={info.subHeading} />)}
         </div>
         
