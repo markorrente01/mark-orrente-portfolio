@@ -1,7 +1,7 @@
-import HeroSec from '@/components/HeroSec';
-import Navbar from '@/components/Navbar';
-import About from '@/components/About';
-import Resume from '@/components/Resume';
+import HeroSec from '@/components/layouts/HeroSec';
+import Navbar from '@/components/layouts/Navbar';
+import About from '@/components/layouts/About';
+import Resume from '@/components/layouts/Resume';
 
 const Home = () => {
   return (

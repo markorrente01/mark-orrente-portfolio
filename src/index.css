@@ -70,8 +70,12 @@ body{
     @apply hover:-translate-y-2 transform transition-all duration-300 ease-out;
     
 }
+@utility eduHover{
+    @apply hover:translate-x-2 transform transition-all duration-300 ease-out;
+    
+}
 @utility cardShadow{
-    @apply hover:shadow-[0_12px_40px_-12px_theme(colors.text.primary/0.4)];
+    @apply hover:shadow-[0_12px_40px_-12px_theme(colors.text.primary/0.35)];
 }
 @utility cardGradient{
    background-image:  repeating-linear-gradient(

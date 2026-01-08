@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
-import MobileNav from "@/components/MobileNav";
+import MobileNav from "@/components/ui/MobileNav";
 import UseScrollSpy from "@/hooks/UseScrollSpy";
 import { cn } from "@/lib/Utils";
 

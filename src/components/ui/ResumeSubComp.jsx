@@ -12,9 +12,9 @@ const H3 = ({children})=>{
   )
 }
 
-const SubHead =({children})=>{
+const SubHead =({children, others})=>{
   return(
-    <p className='mt-2 mb-1 font-medium text-text-primary/50 text-sm md:text-base lg:text-xl'>
+    <p className={cn('mt-2 mb-1 font-medium text-text-primary/50 text-sm md:text-base lg:text-xl', others)}>
       {children}
     </p>
   )
@@ -30,8 +30,8 @@ const P = ({children, others})=>{
 
 const Points = ({children, others})=>{
   return (
-    <div className={cn('border bg-accent-primary/15 w-22', others,
-    'rounded-2xl md:rounded-3xl text-center py-1.5 md:py-2')}>
+    <div className={cn('border bg-accent-primary/15 w-22',
+    'rounded-2xl md:rounded-3xl text-center py-1.5 md:py-2', others)}>
       <p className="font-medium text-xs text-accent-primary">{children}</p>
     </div>
   )
@@ -41,7 +41,7 @@ const bulletPoints = ['Leadership', 'Architecture', 'Strategy'];
 
 const ResumeSubComp = () => {
   return (
-    <div>
+    <div className='md:flex md:gap-10'>
 
 {/* ------------------- experience container start ------------------- */}
     <div>
@@ -95,7 +95,7 @@ const ResumeSubComp = () => {
 
 {/* ---------------- experience 2 container start ------------------------ */}
         <div className={cn('group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
-          'expHover cardShadow')}>
+          'expHover cardShadow bg-bg-card')}>
             <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
                 <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
@@ -134,7 +134,61 @@ const ResumeSubComp = () => {
           header='EDUCATION' 
           subHeading='Academic Background'
         />
-        
+        <div>
+          {/* ------------- education 1 container start ------------------ */}
+          <div className={cn('bg-bg-card mb-8 relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+          'eduHover cardShadow hover:border-accent-primary')}>
+            <div className='md:justify-between flex flex-col md:flex-row'>
+                <Points others='md:py-1 w-25 md:flex md:items-center md:justify-center border-none'>
+                  2022 - 2025
+              </Points>
+              <SubHead>
+                BACHELOR
+              </SubHead>
+            </div>
+
+            <H3>
+              Bachelor of Computer Science
+            </H3>
+            <SubHead others='mt-1'>
+                Ogbannaya Onu Polytechnic Aba, Abia
+              </SubHead>
+
+            <P others='mb-2'>
+              Built a strong foundation in computer science principles, including data 
+              structures, algorithms, software engineering, databases, and web technologies, 
+              with hands-on project experience and collaborative development practices.
+            </P>
+      </div>
+          {/* ------------- education 1 container end ------------------ */}
+{/* --------------education 2 container start ---------------------------*/}
+<div className={cn('bg-bg-card relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+          'eduHover cardShadow hover:border-accent-primary')}>
+            <div className='md:justify-between flex flex-col md:flex-row'>
+                <Points others='md:py-1 border-none w-16 md:flex md:items-center md:justify-center'>
+                  2025
+              </Points>
+              <SubHead>
+                CERTIFICATE
+              </SubHead>
+            </div>
+
+            <H3>
+              Web Development
+            </H3>
+            <SubHead others='mt-1'>
+                Ashpot Academy of Technology
+              </SubHead>
+
+            <P others='mb-2'>
+              Completed an intensive web development programme focused on building 
+              responsive, production-ready web applications using modern frontend
+               technologies, best practices, and real-world project workflows.
+            </P>
+      </div>
+
+{/* --------------education 2 container end ---------------------------*/}
+        </div>
     </div>
 {/* --------------- education container end ------------------------- */}
 

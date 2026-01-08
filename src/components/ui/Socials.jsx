@@ -1,7 +1,4 @@
-import { Linkedin } from 'lucide-react';
-import React from 'react';
 import { cn } from '@/lib/Utils';
-import { Link } from 'react-router-dom';
 
 const Socials = ({link, icon, label}) => {
   return (
