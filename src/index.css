@@ -66,16 +66,18 @@ body{
 @utility sectionCenter{
     @apply pt-15 px-3.5 lg:px-25;
 }
+@utility expHover{
+    @apply hover:-translate-y-2 transform transition-all duration-300 ease-out;
+    
+}
+@utility cardShadow{
+    @apply hover:shadow-[0_12px_40px_-12px_theme(colors.text.primary/0.4)];
+}
 @utility cardGradient{
    background-image:  repeating-linear-gradient(
     -45deg,
     color-mix(in hsl, var(--color-bg-card), transparent) 1px,
     transparent 40px
-  ),
-  radial-gradient(
-  circle at bottom right,
-   color-mix(in hsl, var(--color-accent-primary), transparent),
-  transparent 60%
-);
+  );
   background-size: contain;
 }

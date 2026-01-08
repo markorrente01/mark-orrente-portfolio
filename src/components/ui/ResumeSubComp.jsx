@@ -2,6 +2,7 @@ import React from 'react';
 import { cn } from "@/lib/Utils"
 import { SectionHeader, ResumeHeader } from '@/components/ui/SectionHeader';
 import { GrPersonalComputer } from "react-icons/gr";
+import { RiRemoteControlLine } from "react-icons/ri";
 
 const H3 = ({children})=>{
   return(
@@ -19,9 +20,9 @@ const SubHead =({children})=>{
   )
 }
 
-const P = ({children})=>{
+const P = ({children, others})=>{
   return (
-    <p className='leading-[1.7] text-text-secondary/50 text-sm sm:text-base mt-4 mb-6 font-medium'>
+    <p className={cn('leading-[1.7] text-text-secondary/50 text-sm sm:text-base mt-4 mb-6 font-medium', others)}>
       {children}
     </p>
   )
@@ -42,15 +43,18 @@ const ResumeSubComp = () => {
   return (
     <div>
 
-        <div>
+{/* ------------------- experience container start ------------------- */}
+    <div>
+      {/* <div> */}
         <SectionHeader 
         header='EXPERIENCE' 
         subHeading='Professional Journey'
         />
-        </div>
-
-        <div className={cn('border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
-          'cardGradient hover:-translate-y-1.5')}>
+        {/* </div> */}
+{/* ---------------- experience 1 container start ------------------------ */}
+        <div className={cn('mb-8 group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+          'cardGradient expHover cardShadow')}>
+            <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
                 <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
                      'flex justify-center items-center rounded-xl w-12 py-3.5 mb-4')}>
@@ -87,9 +91,55 @@ const ResumeSubComp = () => {
               }
             </div>
       </div>
+{/* ---------------- experience 1 container end ------------------------ */}
 
+{/* ---------------- experience 2 container start ------------------------ */}
+        <div className={cn('group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+          'expHover cardShadow')}>
+            <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
+            <div className='md:justify-between flex flex-col md:flex-row items-center'>
+                <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
+                     'flex justify-center items-center rounded-xl w-12 py-3.5 mb-4')}>
+                <RiRemoteControlLine className='text-text-primary w-5 h-5'/>
+                </div>
+                <ResumeHeader>
+                  FREELANCE
+                </ResumeHeader>
+            </div>
 
+            <H3>
+              Senior Frontend Developer
+            </H3>
+            <SubHead>
+              Upwork.com
+            </SubHead>
+            <Points others='w-27 border-none'>
+              2025 - present
+            </Points>
+
+            <P others='mb-2'>
+              Delivering end-to-end frontend solutions with React and Next.js, 
+              translating client requirements into polished, scalable interfaces 
+              optimized for performance and maintainability.
+            </P>
       </div>
+{/* ---------------- experience 2 container end ------------------------ */}
+
+    </div>
+    {/* ----------------experience container end----------------------- */}
+
+{/* --------------- education container start ------------------------- */}
+    <div>
+      <SectionHeader 
+          header='EDUCATION' 
+          subHeading='Academic Background'
+        />
+        
+    </div>
+{/* --------------- education container end ------------------------- */}
+
+
+  </div>
   )
 }
 
