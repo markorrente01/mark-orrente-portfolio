@@ -66,6 +66,10 @@ body{
 @utility sectionCenter{
     @apply pt-15 px-3.5 lg:px-25;
 }
+@utility soft-transition{
+    @apply transition-all duration-300 ease-out;
+    /* transform was removed here incase it later affects */
+} 
 @utility expHover{
     @apply hover:-translate-y-2 transform transition-all duration-300 ease-out;
     
@@ -85,3 +89,12 @@ body{
   );
   background-size: contain;
 }
+@utility serviceGradient{
+    background: linear-gradient(
+        90deg,
+        #ff4d5a 0%,
+        #f35f74 35%,
+        #d26a93 70%
+    );
+}
+/* #c97aa3 */

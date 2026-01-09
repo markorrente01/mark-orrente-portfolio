@@ -1,6 +1,4 @@
-import React from 'react';
 import { Header } from '@/components/ui/SectionHeader';
-import { cn } from '@/lib/Utils';
 import ResumeSubComp from "@/components/ui/ResumeSubComp"
 
 const Resume = () => {
@@ -18,9 +16,7 @@ const Resume = () => {
       content={content}
       />
       <ResumeSubComp />
-        
     </section>
   )
 }
-
 export default Resume;

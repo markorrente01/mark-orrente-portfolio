@@ -58,7 +58,7 @@ const ResumeSubComp = () => {
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
                 <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
                      'flex justify-center items-center rounded-xl w-12 py-3.5 mb-4')}>
-                <GrPersonalComputer className='text-text-primary w-5 h-5'/>
+                <GrPersonalComputer className='text-white w-5 h-5'/>
                 </div>
                 <ResumeHeader>
                   CURRENT
@@ -100,7 +100,7 @@ const ResumeSubComp = () => {
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
                 <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
                      'flex justify-center items-center rounded-xl w-12 py-3.5 mb-4')}>
-                <RiRemoteControlLine className='text-text-primary w-5 h-5'/>
+                <RiRemoteControlLine className='text-white w-5 h-5'/>
                 </div>
                 <ResumeHeader>
                   FREELANCE
@@ -161,6 +161,7 @@ const ResumeSubComp = () => {
             </P>
       </div>
           {/* ------------- education 1 container end ------------------ */}
+
 {/* --------------education 2 container start ---------------------------*/}
 <div className={cn('bg-bg-card relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'eduHover cardShadow hover:border-accent-primary')}>
@@ -186,13 +187,10 @@ const ResumeSubComp = () => {
                technologies, best practices, and real-world project workflows.
             </P>
       </div>
-
 {/* --------------education 2 container end ---------------------------*/}
         </div>
     </div>
 {/* --------------- education container end ------------------------- */}
-
-
   </div>
   )
 }
