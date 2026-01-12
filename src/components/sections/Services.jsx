@@ -6,14 +6,14 @@ import { IconContext } from "react-icons";
 
 const H3 = ({children})=>{
   return(
-    <h3 className='relative text-center md:text-start leading-[1.2] mb-4 font-medium text-text-primary text-xl md:text-2xl lg:text-3xl'>
+    <h3 className='relative text-center md:text-start leading-[1.2] mb-4 font-medium text-white text-xl md:text-2xl lg:text-3xl'>
           {children}
       </h3>
   )
 }
 const P = ({children})=>{
   return (
-    <p className='relative text-center md:text-start leading-[1.3] text-text-secondary/90 text-sm sm:text-base mt-2 mb-6 font-medium'>
+    <p className='relative text-center md:text-start leading-[1.3] text-white/90 text-sm sm:text-base mt-2 mb-6 font-medium'>
       {children}
     </p>
   )

@@ -3,7 +3,7 @@ export const Header = ({header, subHeading, content, others}) => {
   return (
     <div className={others}>
       <div className='flex flex-col items-center gap-1'>
-        <p className='text-base sm:text-lg text-accent-primary/85'>{header}</p>
+        <p className='text-base sm:text-lg text-accent-primary/85 tracking-wider'>{header}</p>
         <div className='w-9 h-[0.031rem] sm:w-11 md:w-12 lg:w-13 bg-accent-primary/85'></div>
       </div>
       <h2 className='my-4 heading text-center'>

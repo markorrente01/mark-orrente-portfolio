@@ -1,9 +1,11 @@
-import HeroSec from '@/components/layouts/HeroSec';
-import Navbar from '@/components/layouts/Navbar';
-import About from '@/components/layouts/About';
-import Resume from '@/components/layouts/Resume';
-import Services from '@/components/layouts/Services';
+import HeroSec from '@/components/sections/HeroSec';
+import Navbar from '@/components/sections/Navbar';
+import About from '@/components/sections/About';
+import Resume from '@/components/sections/Resume';
+import Services from '@/components/sections/Services';
 import ScrollButton from '@/components/ui/ScrollTop'
+import Portfolio from '@/components/sections/Portfolio';
+import Contact from '@/components/sections/Contact';
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         <About />
         <Resume />
         <Services />
+        <Portfolio />
+        <Contact />
 
       {/* footer */}
     </div>
