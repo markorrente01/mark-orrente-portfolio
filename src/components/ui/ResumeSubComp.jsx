@@ -94,7 +94,7 @@ const ResumeSubComp = () => {
 {/* ---------------- experience 1 container end ------------------------ */}
 
 {/* ---------------- experience 2 container start ------------------------ */}
-        <div className={cn('group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+        <div className={cn('group relative overflow-hidden rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'expHover cardShadow bg-bg-card')}>
             <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
             <div className='md:justify-between flex flex-col md:flex-row items-center'>

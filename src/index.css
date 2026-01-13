@@ -68,7 +68,6 @@ body{
 }
 @utility soft-transition{
     @apply transition-all duration-300 ease-out;
-    /* transform was removed here incase it later affects */
 } 
 @utility expHover{
     @apply hover:-translate-y-2 transform transition-all duration-300 ease-out;

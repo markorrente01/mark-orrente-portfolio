@@ -6,6 +6,7 @@ import Services from '@/components/sections/Services';
 import ScrollButton from '@/components/ui/ScrollTop'
 import Portfolio from '@/components/sections/Portfolio';
 import Contact from '@/components/sections/Contact';
+import Footer from '@/components/sections/Footer';
 
 const Home = () => {
   return (
@@ -20,8 +21,7 @@ const Home = () => {
         <Services />
         <Portfolio />
         <Contact />
-
-      {/* footer */}
+        <Footer />
     </div>
   )
 }

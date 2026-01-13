@@ -1,31 +1,11 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { cn } from '@/lib/Utils';
 import Socials from '@/components/ui/Socials';
-import {FaLinkedin, FaTiktok} from 'react-icons/fa';
-import { FaUpwork, FaXTwitter } from 'react-icons/fa6';
+import { socials } from '@/data/SocialData';
 
 
 const HeroSec = () => {
     const words = ['Developer', 'Freelancer', 'Digital Marketer'];
-    const socials = [
-      {
-        icon: <FaLinkedin className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
-      },
-      {
-        icon: <FaXTwitter className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
-      },
-      {
-        icon: <FaTiktok className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
-
-      },
-      {
-        icon: <FaUpwork className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
-      }
-    ]
   return (
     <section>
       <div className='text-center text-text-primary relative'>
@@ -56,4 +36,4 @@ const HeroSec = () => {
   )
 }
 
-export default HeroSec
+export default HeroSec;

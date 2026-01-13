@@ -2,7 +2,7 @@ import {cn} from '@/lib/Utils';
 
 const ContactCard = ({icon, heading, subHeading}) => {
   return (
-    <div className={cn('group bg-bg-card border border-text-secondary/12 flex gap-4 p-6 rounded-lg',
+    <div className={cn('group bg-bg-card border border-text-secondary/12 flex gap-4 px-6 py-5 rounded-lg',
         'transform transition-all duration-300 ease-out hover:border-accent-primary',
         'cardShadow'
     )}>
@@ -13,8 +13,8 @@ const ContactCard = ({icon, heading, subHeading}) => {
       </div>
 
       <div className="flex flex-col gap-1 items-start">
-        <p className="text-base sm:text-xl text-text-secondary font-bold">{heading}</p>
-        <p className="text-sm sm:text-lg text-text-primary">{subHeading}</p>
+        <p className="text-base sm:text-lg text-text-secondary font-bold">{heading}</p>
+        <p className="text-sm sm:text-base text-text-primary">{subHeading}</p>
       </div>
     </div>
 

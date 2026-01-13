@@ -11,7 +11,7 @@ const ContactForm = () => {
    return (
     <form onSubmit={handleSubmit(onSubmit)} className={`
         rounded-xl border border-text-primary/12 
-        flex flex-col space-y-6 px-4 py-7 sm:px-8 md:px-10
+        flex flex-col gap-6 px-4 py-7 sm:px-8 md:px-10
          border bg-bg-card w-full
         `}>
         <div className="w-full flex sm:flex-row flex-col gap-6"> 
@@ -41,7 +41,7 @@ const ContactForm = () => {
         </div>
             <button 
                 type="submit"
-                className={cn("sm:w-[40%] m-auto soft-transition bg-accent-primary rounded-md text-white font-bold py-3 px-10",
+                className={cn("sm:w-[40%] mx-auto my-3 soft-transition bg-accent-primary rounded-md text-white font-bold py-3 px-10",
                      "hover:-translate-y-0.5 hover:bg-accent-primary/80")}
             >
                 Send Message
