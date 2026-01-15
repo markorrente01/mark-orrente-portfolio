@@ -15,7 +15,7 @@ const ScrollButton = () => {
         return ()=>window.removeEventListener('scroll', toggleVisibility);
     }, [])
 
-    //function to handle scroll back to top
+    //function to handle scroll back to top of the page
     const handleScroll = ()=>{
         window.scrollTo({
             top: 0,
