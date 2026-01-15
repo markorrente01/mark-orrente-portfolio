@@ -178,7 +178,7 @@ const ResumeSubComp = () => {
               Web Development
             </H3>
             <SubHead others='mt-1'>
-                Ashpot Academy of Technology
+                Ashpot Microsystems Academy
               </SubHead>
 
             <P others='mb-2'>

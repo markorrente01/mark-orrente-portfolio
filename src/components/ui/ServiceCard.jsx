@@ -18,8 +18,8 @@ const P = ({children, others})=>{
 }
 const ServiceCard = ({icon, title, description, featured}) => {
   return (
-    <div className={cn('relative overflow-hidden group bg-bg-card text-center rounded-2xl px-5 pt-5 pb-7 border border-text-secondary/12',
-        'cardShadow expHover hover:border-accent-primary'
+    <a href="#contact" className={cn('relative block overflow-hidden group bg-bg-card text-center rounded-2xl px-5 pt-5 pb-7 border border-text-secondary/12',
+        'cardShadow expHover hover:border-accent-primary hover:cursor-pointer'
     )}>
       {/* rendered featured badge if the feature is true */}
     {featured && <div className="absolute top-0 right-0 w-full h-full overflow-hidden">
@@ -37,7 +37,7 @@ const ServiceCard = ({icon, title, description, featured}) => {
       <H3>{title}</H3>
       <P>{description}</P>
 
-    </div>
+    </a>
   )
 }
 

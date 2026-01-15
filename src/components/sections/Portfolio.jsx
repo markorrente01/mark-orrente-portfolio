@@ -20,10 +20,9 @@ const P = ({children})=>{
 
 const Portfolio = () => {
     const content = `
-          I deliver modern, high-performing frontend solutions 
-          focused on usability, scalability, and clean code—helping 
-          brands turn ideas into fast, reliable, and engaging digital 
-          experiences.
+          I deliver clean-code solutions that bridge the gap between complex ideas and 
+          intuitive user interfaces. From concept to deployment, I ensure your digital 
+          products are fast, accessible, and built to last.
       `;
   return (
     <section id='portfolio' className='sectionCenter mt-20 mb-10'>
@@ -45,10 +44,11 @@ const Portfolio = () => {
                 </div>
                
                 <div className='flex justify-center sm:justify-end items-center w-full'>
-                    <button className={cn('soft-transition rounded-md bg-accent-primary px-7 py-3.5 sm:h-10 sm:px-5 md:px-7 sm:py-0 text-white text-sm font-bold',
+                    <button className={cn('soft-transition rounded-md bg-accent-primary py-3.5 sm:h-10  sm:py-0 text-white text-sm font-bold',
                         'hover:shadow-[0_5px_10px_2px_theme(colors.accent.primary/0.3)] hover:-translate-y-0.5'
                     )}>
-                        Let's Work Together
+                      <a href="#contact" className='px-7 sm:px-5 md:px-7 py-3.5'>Let's Work Together</a>
+                        
                     </button>
                 </div>
                 

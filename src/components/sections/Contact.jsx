@@ -43,37 +43,49 @@ const SocialIcon = ({icon, link})=>{
 }
 const contListStyle = 'text-sm text-text-secondary'
 const liStyle = 'soft-transition hover:text-accent-primary cursor-pointer text-sm text-text-secondary';
-const usefulLinks = ['Home', 'About Us', 'Services', 'Terms of Services', 'Privacy Policy'];
-const servicesLinks = ['Web design', 'Web development', 'Product Management', 'Marketing', 'Graphic design'];
+const usefulLinks = [
+    {name: 'Home', id: '#home'},
+    {name: 'About Us', id: '#about'},
+    {name: 'Services', id: '#services'},
+    {name: 'Portfolio', id: '#portfolio'},
+    {name: 'Contact', id: '#contact'}
+];
 const Contact = () => {
     const iconStyle = 'text-accent-primary w-6 h-6 group-hover:text-white';
     const contactInfo = [
             {
                 icon: <IoLocationOutline className={iconStyle}/>,
                 heading: 'Address',
-                subHeading: 'Aba, Abia State, Nigeria'
+                subHeading: 'Aba, Abia State, Nigeria',
+                href: 'https://maps.google.com/?cid=10967495167196314785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ',
+                ariaLabel: 'view my location on google maps',
             },
             {
                 icon: <LuPhone className={iconStyle}/>,
                 heading: 'Call Me',
-                subHeading: '08106820012'
+                subHeading: '08106820012',
+                href: 'tel:+2348106820012',
+                ariaLabel: 'Call me at +2348106820012'
             },
             {
                 icon: <FaWhatsapp className={iconStyle}/>,
                 heading: 'Direct Message',
-                subHeading: '08104420678'
+                subHeading: '08104420678',
+                href: 'https://wa.me/2348104420678',
+                ariaLabel: 'send a dm at +2348104420678'
             },
             {
                 icon: <CiMail className={iconStyle}/>,
                 heading: 'Email Me',
-                subHeading: 'markorrente01@gmail.com'
+                subHeading: 'markorrente01@gmail.com',
+                href: 'mailto:markorrente01@gmail.com',
+                ariaLabel: 'email me at markorrente01@gmail.com'
             }
         ];
     const content = `
-          I deliver modern, high-performing frontend solutions 
-          focused on usability, scalability, and clean code—helping 
-          brands turn ideas into fast, reliable, and engaging digital 
-          experiences.
+         Whether you have a fully-fleshed-out idea or just the spark of a concept, 
+         I’m here to help you bring it to life. I’m always open to discussing frontend 
+         architecture, UI/UX challenges, or new project opportunities.
       `;
   return (
     <section id='contact' className='sectionCenter'>
@@ -93,7 +105,9 @@ const Contact = () => {
                         key={index}
                         icon={contact.icon} 
                         heading={contact.heading} 
-                        subHeading={contact.subHeading} 
+                        subHeading={contact.subHeading}
+                        href={contact.href}
+                        ariaLabel={contact.ariaLabel}
                     />
                 )
             })}
@@ -101,16 +115,16 @@ const Contact = () => {
             <ContactForm />
         </div>
 
-        <article className='py-10 border-t border-text-primary/10 space-y-5 lg:flex gap-8'>
+        <article className='py-10 border-t border-text-primary/10 space-y-5 lg:flex gap-20'>
             <div className='lg:max-w-[45%]'>
                 <div>
                 <H3 others='text-xl md:text-2xl lg:text-3xl'>
                     ORTECH
                 </H3>
                 <P>
-                    Cras fermentum odio eu feugiat lide par naso tierra. 
-                    Justo eget nada terra videa magna derita valies darta 
-                    donna mare fermentum iaculis eu non diam phasellus.
+                    At ORTECH, we build smart, scalable, and impactful digital solutions. 
+                    Our goal is to turn ideas into powerful products using cutting-edge 
+                    technology and clean, efficient design.
                 </P>
                 </div>
                 <div className='flex gap-2'>
@@ -123,38 +137,28 @@ const Contact = () => {
                 
             </div>
 
-            <article className='grid grid-cols-2 md:grid-cols-3'>
-                <div>
+            <article className='flex gap-15 sm:gap-20'>
+                <div className=''>
                     <H3 others='text-base'>Useful Links</H3>
                     <Ul>
                         {usefulLinks.map((link, index)=>{
                             return (
-                                <li key={index} className={liStyle}>{link}</li>
-                            )
-                        })}
-                    </Ul>
-                </div>  
-                <div>
-                    <H3 others='text-base'>Our Services</H3>
-                    <Ul>
-                        {servicesLinks.map((link, index)=>{
-                            return (
-                                <li key={index} className={liStyle}>{link}</li>
+                                <li key={index} className={liStyle}><a href={link.id}>{link.name}</a></li>
                             )
                         })}
                     </Ul>
                 </div>  
 
-                <div className='space-y-5 col-span-2 md:col-span-1 mt-8 md:mt-0'>
-                    <H3 others='text-base text-center md:text-start'>Contack Us</H3>
+                <div className='space-y-5'>
+                    <H3 others='text-base'>Contack Us</H3>
             
-                    <Ul others='text-center md:text-start space-y-1'>
+                    <Ul others='space-y-1'>
                         <li className={contListStyle}>Adams street</li>
                         <li className={contListStyle}>New york</li>
                         <li className={contListStyle}>United States</li>
                     </Ul>
                     
-                    <Ul others='text-center space-y-1 md:text-start'>
+                    <Ul others='space-y-1'>
                         <li className={contListStyle}><b>Phone:</b> +234 8106820012</li>
                         <li className={contListStyle}><b>Email:</b> markorrente01@gmail.com</li>
                     </Ul>

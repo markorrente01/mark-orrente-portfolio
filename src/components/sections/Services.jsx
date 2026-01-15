@@ -60,9 +60,11 @@ const Services = () => {
                                 solutions tailored to your needs
                             </P>
                         </div>
-                        <button className={cn('soft-transition w-50 sm:w-80 md:w-50 text-accent-primary bg-white rounded-4xl py-2.5 font-bold',
+                        <button className={cn('soft-transition w-50 sm:w-80 md:w-50 text-accent-primary bg-white rounded-4xl font-bold',
                             'hover:shadow-[0_5px_10px_2px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 relative'
-                        )}>Get Started</button>
+                        )}>
+                            <a href="#contact" className='block py-2.5 rounded-4xl'>Get Started</a>
+                        </button>
                     </article>
                 </section>
         </IconContext.Provider>

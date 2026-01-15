@@ -8,15 +8,15 @@ export const socials = [
       },
       {
         icon: <FaXTwitter className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
+        link: 'https://x.com/markorrente01'
       },
       {
         icon: <FaGithub className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
+        link: 'https://github.com/markorrente01'
 
       },
       {
         icon: <FaUpwork className='socialIcon'/>,
-        link: 'https://www.linkedin.com/in/mark-ogbonna'
+        link: 'https://www.upwork.com/freelancers/~01410c7883f37b5121?mp_source=share'
       }
     ]

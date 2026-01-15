@@ -11,7 +11,7 @@ const UseScrollSpy = (ids, offset = 100) => {
                 }
             })
         },
-    {rootMargin: `-${offset}px 0% -70% 0%`})
+    {rootMargin: `-${offset}px 0% -75% 0%`})
     ids.forEach(id=>{
         const element = document.getElementById(id);
         if(element) observer.observe(element);
