@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header, SectionHeader } from '@/components/ui/SectionHeader';
 import AbtBox from '@/components/ui/AbtBox';
 import { BsBriefcase } from 'react-icons/bs';
@@ -5,6 +6,7 @@ import { IoSchoolOutline } from "react-icons/io5";
 import { SlLocationPin } from "react-icons/sl";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import Skills from '@/components/ui/Skills';
+import AOS from "aos";
 
 const About = () => {
     const iconStyle = 'text-accent-primary w-6 h-6';
@@ -30,6 +32,7 @@ const About = () => {
             subHeading: 'Open to Work'
         }
     ];
+
     const content = `
                     I’m a detail-driven Frontend developer specializing in building clean, functional, 
                     and conversion-focused websites. I enjoy turning complex requirements into 
@@ -39,7 +42,7 @@ const About = () => {
                 `;
   return (
     <section id='about' className='sectionCenter'>
-        <div>
+        <div data-aos='fade-up'>
             <Header 
             header='ABOUT ME' 
             subHeading='Transforming Ideas into Digital Reality' 

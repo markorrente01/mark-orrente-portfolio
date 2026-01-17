@@ -39,8 +39,8 @@ const Services = () => {
                     content={content}
                     others='mb-10'
                     />
-                    <div className='grid gap-7 md:grid-cols-3 mb-10'>
-                        {ServiceData.map(Data=>{
+                    <div className='grid gap-7 md:grid-cols-3 mb-10 '>
+                        {ServiceData.map((Data, index)=>{
                         return(
                             <ServiceCard 
                                 key={Data.id}
@@ -48,11 +48,13 @@ const Services = () => {
                                 title={Data.title}
                                 description={Data.description}
                                 featured={Data.featured}
+                                data-aos='zoom-in'
+                                data-delay={index * 100}
                             />
                         )
                     })}
                     </div>
-                    <article className='z-1 overflow-hidden relative rounded-3xl serviceGradient p-7 md:pt-10 md:px-13 flex md:flex-row md:justify-between flex-col justify-center items-center'>
+                    <article data-aos='fade-up' className='z-1 overflow-hidden relative rounded-3xl serviceGradient p-7 md:pt-10 md:px-13 flex md:flex-row md:justify-between flex-col justify-center items-center'>
                         <div className='bg-[#c97aa3]/80 rounded-full w-60 h-60 absolute -right-20' />
                         <div>
                             <H3>Transform Your Vision Into Reality</H3>

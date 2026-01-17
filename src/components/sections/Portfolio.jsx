@@ -31,10 +31,11 @@ const Portfolio = () => {
             subHeading='Portfolio' 
             content={content}
             others='mb-10'
+            data-aos='fade-up'
             />
             <Project />
             <div className='sm:flex border-t border-text-primary/10 pt-12'>
-                <div>
+                <div data-aos='fade-right'>
                      <H2>Like what you see?</H2>
                     <P>
                         Your vision deserves a digital experience that is as functional as it is beautiful. 
@@ -43,7 +44,7 @@ const Portfolio = () => {
                     </P>
                 </div>
                
-                <div className='flex justify-center sm:justify-end items-center w-full'>
+                <div data-aos='fade-left' className='flex justify-center sm:justify-end items-center w-full'>
                     <button className={cn('soft-transition rounded-md bg-accent-primary py-3.5 sm:h-10  sm:py-0 text-white text-sm font-bold',
                         'hover:shadow-[0_5px_10px_2px_theme(colors.accent.primary/0.3)] hover:-translate-y-0.5'
                     )}>

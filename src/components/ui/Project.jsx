@@ -18,7 +18,7 @@ const Project = () => {
         const filterMessage = activeCategory && (message.filter(content=>activeCategory===content.category));
   return (
         <section className="mb-15">
-            <div className="flex flex-wrap justify-center gap-2.5 md:gap-3.5 mb-10">
+            <div data-aos='fade-up' className="flex flex-wrap justify-center gap-2.5 md:gap-3.5 mb-10">
           {categories.map((category, index)=>{
             return (
                 <button onClick={()=>handleFilter(category)} key={index} className={cn('rounded-md border border-text-secondary/12 text-text-primary py-2.5 px-4',

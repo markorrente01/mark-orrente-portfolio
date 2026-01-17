@@ -49,10 +49,12 @@ const ResumeSubComp = () => {
         <SectionHeader 
         header='EXPERIENCE' 
         subHeading='Professional Journey'
+        data-aos='fade-right'
         />
         {/* </div> */}
 {/* ---------------- experience 1 container start ------------------------ */}
-        <div className={cn('mb-8 group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+    <div data-aos='zoom-in-right'>
+      <div  className={cn('mb-8 group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'cardGradient expHover cardShadow')}>
             <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
@@ -91,10 +93,13 @@ const ResumeSubComp = () => {
               }
             </div>
       </div>
+    </div>
+        
 {/* ---------------- experience 1 container end ------------------------ */}
 
 {/* ---------------- experience 2 container start ------------------------ */}
-        <div className={cn('group relative overflow-hidden rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+  <div data-aos='zoom-in-up'>
+    <div  className={cn('group relative overflow-hidden rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'expHover cardShadow bg-bg-card')}>
             <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
             <div className='md:justify-between flex flex-col md:flex-row items-center'>
@@ -123,6 +128,8 @@ const ResumeSubComp = () => {
               optimized for performance and maintainability.
             </P>
       </div>
+  </div>
+        
 {/* ---------------- experience 2 container end ------------------------ */}
 
     </div>
@@ -133,37 +140,42 @@ const ResumeSubComp = () => {
       <SectionHeader 
           header='EDUCATION' 
           subHeading='Academic Background'
+          data-aos='fade-left'
         />
         <div>
           {/* ------------- education 1 container start ------------------ */}
-          <div className={cn('bg-bg-card mb-8 relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
-          'eduHover cardShadow hover:border-accent-primary')}>
-            <div className='md:justify-between flex flex-col md:flex-row'>
-                <Points others='md:py-1 w-25 md:flex md:items-center md:justify-center border-none'>
-                  2022 - 2025
-              </Points>
-              <SubHead>
-                BACHELOR
-              </SubHead>
-            </div>
+          <div data-aos='fade-left'>
+            <div  className={cn('bg-bg-card mb-8 relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+            'eduHover cardShadow hover:border-accent-primary')}>
+              <div className='md:justify-between flex flex-col md:flex-row'>
+                  <Points others='md:py-1 w-25 md:flex md:items-center md:justify-center border-none'>
+                    2022 - 2025
+                </Points>
+                <SubHead>
+                  BACHELOR
+                </SubHead>
+              </div>
 
-            <H3>
-              Bachelor of Computer Science
-            </H3>
-            <SubHead others='mt-1'>
-                Ogbannaya Onu Polytechnic Aba, Abia
-              </SubHead>
+              <H3>
+                Bachelor of Computer Science
+              </H3>
+              <SubHead others='mt-1'>
+                  Ogbannaya Onu Polytechnic Aba, Abia
+                </SubHead>
 
-            <P others='mb-2'>
-              Built a strong foundation in computer science principles, including data 
-              structures, algorithms, software engineering, databases, and web technologies, 
-              with hands-on project experience and collaborative development practices.
-            </P>
+              <P others='mb-2'>
+                Built a strong foundation in computer science principles, including data 
+                structures, algorithms, software engineering, databases, and web technologies, 
+                with hands-on project experience and collaborative development practices.
+              </P>
       </div>
+          </div>
+          
           {/* ------------- education 1 container end ------------------ */}
 
 {/* --------------education 2 container start ---------------------------*/}
-<div className={cn('bg-bg-card relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+  <div data-aos='fade-up-left'>
+      <div className={cn('bg-bg-card relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'eduHover cardShadow hover:border-accent-primary')}>
             <div className='md:justify-between flex flex-col md:flex-row'>
                 <Points others='md:py-1 border-none w-16 md:flex md:items-center md:justify-center'>
@@ -187,6 +199,8 @@ const ResumeSubComp = () => {
                technologies, best practices, and real-world project workflows.
             </P>
       </div>
+
+  </div>
 {/* --------------education 2 container end ---------------------------*/}
         </div>
     </div>

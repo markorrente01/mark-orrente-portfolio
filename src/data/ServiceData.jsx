@@ -43,7 +43,7 @@ export const ServiceData = [
   },
   {
     id: 6,
-    title: "Landing Page Conversion Optimization",
+    title: "Landing Page Conversion",
     description:
       "Designing and optimizing landing pages aligned with ad campaigns to boost engagement, reduce bounce rates, and increase conversions.",
     icon: <HiOutlineTrendingUp />,

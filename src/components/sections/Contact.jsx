@@ -94,6 +94,7 @@ const Contact = () => {
             header='CONTACT' 
             subHeading='Contact' 
             content={content}
+            data-aos='fade-up'
             />
         </div>
 
