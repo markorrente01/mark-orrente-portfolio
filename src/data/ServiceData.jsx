@@ -24,7 +24,7 @@ export const ServiceData = [
     id: 3,
     title: "UI/UX Implementation",
     description:
-      "Translating designs into pixel-perfect, accessible, and responsive interfaces with attention to usability and cross-browser compatibility.",
+      "Translating designs into pixel-perfect and responsive interfaces with attention to usability and cross-browser compatibility.",
     icon: <MdOutlineDesignServices />
   },
   {

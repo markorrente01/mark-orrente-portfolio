@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 :root {
+        
+        --accent-primary: 359, 100%, 65%;
+
         --bg-primary: 0, 0%, 100%;
         --bg-secondary: 243, 245, 246;
         --bg-card: 40, 56%, 97%;
         --text-primary: 33, 33, 33;
         --text-secondary: 0, 0%, 31%;
-        --accent-primary: 359, 100%, 65%;
     }
 .dark {
         --bg-primary: 0, 0%, 2%;
@@ -25,6 +27,8 @@ html{
 body{
         @apply bg-bg-secondary transition duration-200 ease-in;
         font-feature-settings: "rlig" 1, "calt" 1;
+        font-family: "Space Grotesk", system-ui, sans-serif;
+
     }
 @theme {
     --color-bg-primary: hsl(var(--bg-primary));

@@ -138,7 +138,7 @@ const ContactForm = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                    "sm:w-[40%] mx-auto my-3 soft-transition bg-accent-primary rounded-md text-white font-bold py-3 px-10",
+                    " mx-auto my-3 soft-transition bg-accent-primary rounded-md text-white font-bold py-3 px-10",
                     "hover:-translate-y-0.5 hover:bg-accent-primary/80 disabled:opacity-50 disabled:cursor-not-allowed"
                 )}
             >

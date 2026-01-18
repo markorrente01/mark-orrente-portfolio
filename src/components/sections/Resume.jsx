@@ -18,9 +18,9 @@ const Resume = () => {
       data-aos='fade-up'
       />
       <ResumeSubComp />
-      <div className='flex justify-between sm:flex-row flex-col gap-5' data-aos='fade-up'>
+      <div className='mt-10 flex justify-between sm:flex-row flex-col gap-5' data-aos='fade-up'>
          <button
-            className={cn('mt-10 w-full soft-transition rounded-md bg-accent-primary text-white text-base font-bold',
+            className={cn('w-full soft-transition rounded-md bg-accent-primary text-white text-base font-bold',
                 'hover:shadow-[0_5px_10px_2px_theme(colors.accent.primary/0.3)] hover:-translate-y-0.5 animate-[bounce_4s_infinite]'
             )}>
               <a
@@ -30,7 +30,7 @@ const Resume = () => {
               >Preview CV</a>
           </button>
           <button
-            className={cn('mt-10 w-full soft-transition rounded-md bg-accent-primary text-white text-base font-bold',
+            className={cn('w-full soft-transition rounded-md bg-accent-primary text-white text-base font-bold',
                 'hover:shadow-[0_5px_10px_2px_theme(colors.accent.primary/0.3)] hover:-translate-y-0.5 animate-[bounce_4s_infinite]'
             )}>
               <a

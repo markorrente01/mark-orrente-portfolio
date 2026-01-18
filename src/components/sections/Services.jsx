@@ -38,6 +38,7 @@ const Services = () => {
                     subHeading='Services' 
                     content={content}
                     others='mb-10'
+                    data-aos='fade-up'
                     />
                     <div className='grid gap-7 md:grid-cols-3 mb-10 '>
                         {ServiceData.map((Data, index)=>{

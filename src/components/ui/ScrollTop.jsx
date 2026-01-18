@@ -27,7 +27,7 @@ const ScrollButton = () => {
         {isVisible && 
         <button 
             onClick={handleScroll}
-            className='z-100 transition text-white bg-accent-primary hover:bg-accent-primary/50 p-3 rounded-lg fixed sm:top-[90vmin] top-[160vmin] sm:right-[20px] right-[8px]'
+            className='z-100 transition text-white bg-accent-primary hover:bg-accent-primary/50 p-3 rounded-lg fixed sm:top-[90vmin] top-[155vmin] sm:right-[20px] right-[8px]'
             >
             <FaArrowUp />
         </button>}

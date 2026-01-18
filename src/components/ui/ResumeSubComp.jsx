@@ -41,10 +41,10 @@ const bulletPoints = ['Leadership', 'Architecture', 'Strategy'];
 
 const ResumeSubComp = () => {
   return (
-    <div className='md:flex md:gap-10'>
+    <div className='md:flex md:gap-10 overflow-hidde'>
 
 {/* ------------------- experience container start ------------------- */}
-    <div>
+    <div className='overflow-hidde'>
       {/* <div> */}
         <SectionHeader 
         header='EXPERIENCE' 
@@ -140,11 +140,11 @@ const ResumeSubComp = () => {
       <SectionHeader 
           header='EDUCATION' 
           subHeading='Academic Background'
-          data-aos='fade-left'
+          data-aos='fade-up'
         />
         <div>
           {/* ------------- education 1 container start ------------------ */}
-          <div data-aos='fade-left'>
+          <div data-aos='zoom-in-right'>
             <div  className={cn('bg-bg-card mb-8 relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
             'eduHover cardShadow hover:border-accent-primary')}>
               <div className='md:justify-between flex flex-col md:flex-row'>
@@ -160,7 +160,7 @@ const ResumeSubComp = () => {
                 Bachelor of Computer Science
               </H3>
               <SubHead others='mt-1'>
-                  Ogbannaya Onu Polytechnic Aba, Abia
+                  Ogbonnaya Onu Polytechnic Aba, Abia
                 </SubHead>
 
               <P others='mb-2'>
@@ -174,7 +174,7 @@ const ResumeSubComp = () => {
           {/* ------------- education 1 container end ------------------ */}
 
 {/* --------------education 2 container start ---------------------------*/}
-  <div data-aos='fade-up-left'>
+  <div data-aos='zoom-in-right'>
       <div className={cn('bg-bg-card relative overflow-hidden border border-text-secondary/12 rounded-2xl py-4 px-5 md:px-7 md:py-6', 
           'eduHover cardShadow hover:border-accent-primary')}>
             <div className='md:justify-between flex flex-col md:flex-row'>

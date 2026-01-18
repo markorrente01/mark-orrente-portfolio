@@ -32,7 +32,7 @@ const Home = () => {
   }
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-hidde">
       <ScrollButton />
       <Navbar />
       <main className="py-70 bg-bg-primary" id="home">

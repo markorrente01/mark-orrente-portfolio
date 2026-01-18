@@ -8,19 +8,19 @@ const Skills = () => {
     const categories = ['All Skills', 'Core Skills', 'Styling & Ui', 
         'Tools & Workflow']
     const skillsInfo = [
-        {name: 'React.js & Next.js', value: 95, category: 'Core Skills'},
-        {name: 'Javascript (ES6)', value: 90, category: 'Core Skills'},
+        {name: 'React.js & Next.js', value: 96, category: 'Core Skills'},
+        {name: 'Javascript (ES6)', value: 97, category: 'Core Skills'},
         {name: 'HTML5 & CSS3', value: 95, category: 'Core Skills'},
-        {name: 'Responsive Design', value: 90, category: 'Core Skills'},
+        {name: 'Responsive Design', value: 95, category: 'Core Skills'},
         {name: 'API Integration', value: 90, category: 'Core Skills'},
         {name: 'Tailwind CSS', value: 92, category: 'Core Skills'},
-        {name: 'SCSS/SASS', value: 95, category: 'Styling & Ui'},
+        {name: 'SCSS/SASS', value: 90, category: 'Styling & Ui'},
         {name: 'UI/UX Implementation', value: 95, category: 'Styling & Ui'},
         {name: 'Cross-Browser Compatibility', value: 95, category: 'Styling & Ui'},
-        {name: 'Git & GitHub', value: 85, category: 'Tools & Workflow'},
+        {name: 'Git & GitHub', value: 93, category: 'Tools & Workflow'},
         {name: 'Node.js', value: 90, category: 'Tools & Workflow'},
         {name: 'NPM & Yarn', value: 90, category: 'Tools & Workflow'},
-        {name: 'Debugging & Error Handling', value: 83, category: 'Core Skills'},
+        {name: 'Debugging & Error Handling', value: 89, category: 'Core Skills'},
         {name: 'Figma to Code', value: 94, category: 'Styling & Ui'},
         
     ];

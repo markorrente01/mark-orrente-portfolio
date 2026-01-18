@@ -1,7 +1,7 @@
 import {cn} from "@/lib/Utils";
 export const Header = ({header, subHeading, content, others, ...props}) => {
   return (
-    <div className={others} {...props}>
+    <div className={`${others} overflow-hidden`} {...props} >
       <div className='flex flex-col items-center gap-1'>
         <p className='text-base sm:text-lg text-accent-primary/85 tracking-wider'>{header}</p>
         <div className='w-9 h-[0.031rem] sm:w-11 md:w-12 lg:w-13 bg-accent-primary/85'></div>
@@ -19,7 +19,7 @@ export const Header = ({header, subHeading, content, others, ...props}) => {
 
 export const SectionHeader = ({header, subHeading, ...props}) => {
   return (
-    <div className="mb-5 md:mb-10" {...props}>
+    <div className="mb-5 md:mb-10 overflow-hidden" {...props}>
       <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50 m-auto mt-12 mb-5', 
     'rounded-2xl md:rounded-3xl text-center py-1.5 md:py-2 w-28 md:w-30')}>
       <p className="font-bold text-sm md:text-base text-white">{header}</p>
@@ -33,7 +33,7 @@ export const SectionHeader = ({header, subHeading, ...props}) => {
 }
 export const ResumeHeader = ({children}) => {
   return (
-      <div className={cn('bg-accent-primary/15 w-22 md:w-24 border border-accent-primary', 
+      <div className={cn('overflow-hidden bg-accent-primary/15 w-22 md:w-24 border border-accent-primary', 
     'rounded-2xl md:rounded-3xl text-center py-2')}>
       <p className="font-semibold text-xs text-accent-primary">{children}</p>
     </div>
