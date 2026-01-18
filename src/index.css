@@ -1,56 +1,46 @@
 @import "tailwindcss";
 
 :root {
-        
-        --accent-primary: 359, 100%, 65%;
+    --accent-primary: 359 100% 65%;
 
-        --bg-primary: 0, 0%, 100%;
-        --bg-secondary: 243, 245, 246;
-        --bg-card: 40, 56%, 97%;
-        --text-primary: 33, 33, 33;
-        --text-secondary: 0, 0%, 31%;
-    }
+    --bg-primary: 0 0% 100%;
+    --bg-secondary: 240 2% 96%;
+    --bg-card: 40 56% 97%;
+
+    --text-primary: 0 0% 13%;
+    --text-secondary: 0 0% 31%;
+}
+
 .dark {
-        --bg-primary: 0, 0%, 2%;
-        --bg-secondary: 20, 20, 20;
-        --bg-card: 0, 0%, 11%;
-        --text-primary: 255, 255, 255;
-        --text-secondary: 0, 0%, 85%;
-        --accent-primary: 359, 100%, 65%;
-    }
-    *{
-        @apply box-border;
+    --bg-primary: 0 0% 2%;
+    --bg-secondary: 0 0% 8%;
+    --bg-card: 0 0% 11%;
+
+    --text-primary: 0 0% 100%;
+    --text-secondary: 0 0% 85%;
+}
+@theme {
+    --color-bg-primary: hsl(var(--bg-primary));
+    --color-bg-secondary: hsl(var(--bg-secondary));
+    --color-bg-card: hsl(var(--bg-card));
+
+    --color-text-primary: hsl(var(--text-primary));
+    --color-text-secondary: hsl(var(--text-secondary));
+
+    --color-accent-primary: hsl(var(--accent-primary));
+}
+
+*{
+    @apply box-border;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-        @apply bg-bg-secondary transition duration-200 ease-in;
-        font-feature-settings: "rlig" 1, "calt" 1;
-        font-family: "Space Grotesk", system-ui, sans-serif;
+    @apply bg-bg-secondary transition duration-200 ease-in;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: "Space Grotesk", system-ui, sans-serif;
 
-    }
-@theme {
-    --color-bg-primary: hsl(var(--bg-primary));
-    --color-bg-secondary: rgb(var(--bg-secondary));
-    --color-bg-card: hsl(var(--bg-card));
-    --color-text-primary: rgb(var(--text-primary));
-    --color-text-secondary: hsl(var(--text-secondary));
-    --color-accent-primary: hsl(var(--accent-primary));
-
-    --animate-slideInUp: slideInUp 1s ease-out forwards;
-}
-@utility base {
-    @keyframes slideInUp {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    } 
 }
 
 @utility iconHover{
