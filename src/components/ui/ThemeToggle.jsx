@@ -4,28 +4,28 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/Utils';
 
 const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isLightMode, setIsLightMode] = useState(false);
 
     const toggle = ()=>{
-        if(isDarkMode){
-            document.documentElement.classList.remove('dark');
-            setIsDarkMode(false);
-            localStorage.setItem('theme', 'light')
+        if(isLightMode){
+            document.documentElement.classList.remove('light');
+            setIsLightMode(false);
+            localStorage.setItem('theme', 'dark')
         }
         else{
-            document.documentElement.classList.add('dark');
-            setIsDarkMode(true);
-            localStorage.setItem('theme', 'dark')
+            document.documentElement.classList.add('light');
+            setIsLightMode(true);
+            localStorage.setItem('theme', 'light')
         }
     }
     useEffect(()=>{
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme==='dark') {
-            document.documentElement.classList.add('dark');
-            setIsDarkMode(true);
+        if (savedTheme==='light') {
+            document.documentElement.classList.add('light');
+            setIsLightMode(true);
         } else {
-            document.documentElement.classList.remove('dark');
-            setIsDarkMode(false);
+            document.documentElement.classList.remove('light');
+            setIsLightMode(false);
         }
     }, [])
 
@@ -33,7 +33,7 @@ const ThemeToggle = () => {
     <button onClick={toggle} className={cn('flex items-center justify-center w-13 h-13 rounded-full',
         'transform transition-all duration-300 ease-out hover:bg-accent-primary hover:-translate-y-0.5'
     )}>
-      {isDarkMode ? <Sun className='text-text-primary'/> : <Moon className='text-text-primary'/>}
+      {isLightMode ? <Moon className='text-text-primary'/> : <Sun className='text-text-primary'/>}
     </button>
   )
 }

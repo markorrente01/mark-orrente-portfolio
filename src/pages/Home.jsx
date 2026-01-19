@@ -25,7 +25,7 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="bg-bg-card fixed inset-0 z-50 flex items-center justify-center">
+      <div className="bg-[hsl(0 0% 8%)] fixed inset-0 z-50 flex items-center justify-center">
         <RotateLoader color="hsl(359, 100%, 65%)" />
       </div>
     );
