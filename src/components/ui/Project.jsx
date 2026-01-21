@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
-import portfolioMobile from '../../assets/images/portfolioMobile.png'
-import portfolioTablet from '../../assets/images/portfolioTablet.png'
-import portfolioDesktop from '../../assets/images/portfolioDesktop.png';
+import portfolioMobile from '../../../public/images/portfolioMobile.png'
+import portfolioTablet from '../../../public/images/portfolioTablet.png'
+import portfolioDesktop from '../../../public/images/portfolioDesktop.png';
 
 const projects = [
   {
