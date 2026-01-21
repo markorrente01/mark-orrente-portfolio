@@ -7,7 +7,7 @@ import { socials } from '@/data/SocialData';
 const HeroSec = () => {
     const words = ['Developer', 'Freelancer', 'Digital Marketer'];
   return (
-    <section data-aos='fade-up'>
+    <section data-aos='fade-up' id='home'>
       <div className='text-center text-text-primary relative'>
       <h1 className='text-2xl font-bold leading-relaxed sm:text-4xl md:text-4xl lg:text-5xl'>Hi, I'm Mark Ogbonna</h1>
       <p className='text-base sm:text-xl md:text-2xl mb-7.5 lg:mb-10'>I'm a <span className={cn("relative inline-block text-accent-primary",

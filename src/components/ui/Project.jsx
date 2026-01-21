@@ -1,46 +1,43 @@
-import { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import { cn } from '@/lib/Utils';
+import portfolioMobile from '../../assets/images/portfolioMobile.png'
+import portfolioTablet from '../../assets/images/portfolioTablet.png'
+import portfolioDesktop from '../../assets/images/portfolioDesktop.png';
+
+const projects = [
+  {
+    role: 'Project Manager, Frontend developer.',
+    thumbnail: portfolioTablet,
+    image1: portfolioDesktop,
+    image2: portfolioDesktop,
+    title: "Portfolio Website",
+    skills: ["React", "Tailwindcss", "Mobile First"],
+    year: "2025",
+    tags: ["REACT.JS", "TAILWINDCSS"],
+    liveUrl: "https://my-portfolio-website-omega-five.vercel.app/",
+    description: `Designed and developed a modern personal portfolio web application to showcase projects, 
+                  skills, and professional experience. Built with React and Tailwind CSS, the site features a clean UI, 
+                  responsive layout, smooth animations, and reusable components. Emphasis was placed on performance, 
+                  accessibility, and scalability, delivering a polished, production-ready portfolio suitable for client 
+                  presentations and personal branding.`
+  }
+];
 
 const Project = () => {
-    const [activeCategory, setActiveCategory] = useState('All Projects');
-    const categories = ['All Projects', 'Web Apps', 'Landing Pages'];
-    const message = [
-      {content: 'Still Working on The Portfolio Projects.', category: 'All Projects'},
-      {content: 'Still Working on The Portfolio Web Apps Projects.', category: 'Web Apps'},
-      {content: 'Still Working on Them Landing Pages.', category: 'Landing Pages'}
-    ]
-    const handleFilter = (category)=>{
-          // setActiveCategory(category === 'All Projects' ? null : category)
-          setActiveCategory(category)
-        }
-        // const filterMessage = activeCategory ? (message.filter(content=>activeCategory===content.category)) : message;
-        const filterMessage = activeCategory && (message.filter(content=>activeCategory===content.category));
   return (
-        <section className="mb-15">
-            <div data-aos='fade-up' className="flex flex-wrap justify-center gap-2.5 md:gap-3.5 mb-10">
-          {categories.map((category, index)=>{
-            return (
-                <button onClick={()=>handleFilter(category)} key={index} className={cn('rounded-md border border-text-secondary/12 text-text-primary py-2.5 px-4',
-                    'transform transition-all duration-300 ease-out ', 'text-[0.85rem] sm:text-sm md:text-base',
-                     activeCategory === category || (category === 'All Projects' && activeCategory === null) ? 'bg-accent-primary text-white' : '')}>
-                        {category}
-                </button>
-            )
-          })}
-        </div>
-        {/* <div className="sm:grid-cols-2 md:grid-cols-3 grid auto-cols-fr gap-x-6 gap-y-10"> */}
-        <div className="">
-          {
-            filterMessage.map((message, index)=>{
-              return(<h1 key={index} className="text-text-primary text-center text-2xl sm:text-3xl font-bold">{message.content}</h1>)
-            })
-          }
-        </div>
-       
-        </section>
-  )
-  
-}
+    <section className="mb-15">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            project={project}
+            index={index}
+            projects={projects}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Project;
+

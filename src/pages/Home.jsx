@@ -7,41 +7,19 @@ import ScrollButton from '@/components/ui/ScrollTop'
 import Portfolio from '@/components/sections/Portfolio';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
-import { useEffect, useState } from 'react';
-import { RotateLoader } from 'react-spinners';
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
-
-    window.addEventListener('load', handleLoad);
-
-    return () => window.removeEventListener('load', handleLoad);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="bg-[hsl(0 0% 8%)] fixed inset-0 z-50 flex items-center justify-center">
-        <RotateLoader color="hsl(359, 100%, 65%)" />
-      </div>
-    );
-  }
-
   return (
-    <div className="relative min-h-screen overflow-hidde">
+    <div className="relative min-h-screen">
       <ScrollButton />
       <Navbar />
-      <main className="py-70 bg-bg-primary" id="home">
+      <main className="py-70 bg-bg-primary">
         <HeroSec />
       </main>
       <About />
+      <Portfolio />
       <Resume />
       <Services />
-      <Portfolio />
       <Contact />
       <Footer />
     </div>

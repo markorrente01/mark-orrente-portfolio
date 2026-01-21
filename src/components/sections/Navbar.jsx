@@ -10,9 +10,9 @@ const Navbar = () => {
     const navLinks = [
       {name: 'Home', id: 'home'},
       {name: 'About', id: 'about'},
+      {name: 'Portfolio', id: 'portfolio'},
       {name: 'Resume', id: 'resume'},
       {name: 'Services', id: 'services'},
-      {name: 'Portfolio', id: 'portfolio'},
       {name: 'Contact', id: 'contact'}
     ];
     const activeSection = UseScrollSpy(navLinks.map(link=>link.id))
