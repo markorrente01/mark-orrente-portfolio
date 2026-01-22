@@ -1,16 +1,17 @@
 import ProjectCard from "./ProjectCard";
-import portfolioMobile from '../../../public/images/portfolioMobile.png'
-import portfolioTablet from '../../../public/images/portfolioTablet.png'
-import portfolioDesktop from '../../../public/images/portfolioDesktop.png';
+import portfolioPicOne from '../../assets/images/portfolione.png';
+import portfolioPicTwo from '../../assets/images/portfoliotwo.png';
+import flintmallPicOne from '../../assets/images/flintmallone.png';
+import flintmallPicTwo from '../../assets/images/flintmalltwo.png';
 
 const projects = [
   {
     role: 'Project Manager, Frontend developer.',
-    thumbnail: portfolioTablet,
-    image1: portfolioDesktop,
-    image2: portfolioDesktop,
+    thumbnail: portfolioPicOne,
+    image1: portfolioPicOne,
+    image2: portfolioPicTwo,
     title: "Portfolio Website",
-    skills: ["React", "Tailwindcss", "Mobile First"],
+    skills: ["React ●", "Tailwindcss ●", "Mobile First"],
     year: "2025",
     tags: ["REACT.JS", "TAILWINDCSS"],
     liveUrl: "https://my-portfolio-website-omega-five.vercel.app/",
@@ -19,7 +20,36 @@ const projects = [
                   responsive layout, smooth animations, and reusable components. Emphasis was placed on performance, 
                   accessibility, and scalability, delivering a polished, production-ready portfolio suitable for client 
                   presentations and personal branding.`
-  }
+  },
+  {
+    role: "Frontend Developer",
+    thumbnail: flintmallPicTwo,
+    image1: flintmallPicTwo,
+    image2: flintmallPicOne,
+    title: "Multivendor Marketplace Platform",
+    skills: [
+              "React.js ●",
+              "Zustand State Management ●",
+              "Tailwind CSS ●",
+              "Mobile-First Design ●",
+              "Multivendor Architecture ●",
+              "In-App Chat System ●",
+              "Admin Dashboard ●",
+              "Cross-Browser Compatibility ●",
+              "Authentication & User Roles ●",
+              "Marketplace UI/UX"
+    ],
+    year: "2026",
+    tags: ["REACT.JS", "ZUSTAND"],
+    liveUrl: "https://flintmallonline.com/",
+    description: `Currently developing a scalable multivendor marketplace platform using React.js, 
+            Zustand for state management, and Tailwind CSS with a mobile-first approach. The platform supports 
+            buying and selling, posting ads, ad boosting, category-based listings, and in-app real-time chat. 
+            Users can register as personal or business accounts, manage listings, and interact securely. 
+            The project also includes an admin dashboard for moderation, user management, and content control, 
+            with full cross-browser compatibility and performance-focused UI/UX architecture.`
+}
+
 ];
 
 const Project = () => {

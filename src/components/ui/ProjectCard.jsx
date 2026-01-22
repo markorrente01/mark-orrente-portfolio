@@ -130,7 +130,7 @@ const ProjectCard = ({ project, index, projects }) => {
               {/* main content body */}
               <div className="w-full mx-auto mt-8 flex flex-col gap-6 p-4 xl:p-8">
                 {/* Description */}
-                <div className="flex flex-col xl:flex-row gap-3">
+                <div className="flex flex-col xl:flex-row gap-3 xl:gap-6">
                   {/* content, role, description, liveSite, deliverables */}
                   <div className="space-y-5 xl:basis-[42%] xl:flex-none">
                       <p className="text-base text-text-primary md:text-xl leading-relaxed">
@@ -149,7 +149,7 @@ const ProjectCard = ({ project, index, projects }) => {
                     </span>
                     <div className="flex flex-wrap items-center gap-2">
                       {activeProject.skills.map((skill, i) => (
-                        <Features key={i} others='md:text-sm py-2 w-24'>{skill}</Features>
+                        <p key={i} className="text-text-primary text-sm md:text-base">{skill}</p>
                       ))}
                     </div>
                   </div>
@@ -172,12 +172,12 @@ const ProjectCard = ({ project, index, projects }) => {
                     <img
                       src={activeProject.image1}
                       alt={activeProject.title}
-                      className="w-full h-auto rounded-lg"
+                      className="w-full h-auto"
                     />
                     <img
                       src={activeProject.image2}
                       alt={activeProject.title}
-                      className="w-full h-auto rounded-lg"
+                      className="w-full h-auto"
                     />
                   </div>
 
@@ -206,7 +206,7 @@ const ProjectCard = ({ project, index, projects }) => {
           <img
             src={project.thumbnail}
             alt={project.title}
-            className="project-image soft-transition rounded-xl"
+            className="object-contain project-image soft-transition rounded-xl"
           />
           
           {/* Overlay */}
