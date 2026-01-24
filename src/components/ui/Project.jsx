@@ -62,6 +62,8 @@ const Project = () => {
             project={project}
             index={index}
             projects={projects}
+            data-aos='zoom-in-up'
+            data-delay={index * 100}
           />
         ))}
       </div>

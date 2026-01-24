@@ -56,7 +56,6 @@ body{
     font-family: "Space Grotesk", system-ui, sans-serif;
 
 }
-
 @utility iconHover{
     @apply cursor-pointer bg-accent-primary;
     transform: scaleY(2px);

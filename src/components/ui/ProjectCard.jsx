@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import * as Dialog from "@radix-ui/react-dialog"; 
+import { DotLoader } from "react-spinners";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { HiOutlineEye } from "react-icons/hi";
 import { MdOpenInNew } from "react-icons/md";
@@ -47,7 +48,7 @@ const IconContainer = ({ onPreview, liveUrl }) => {
 
 // Main Component 
 
-const ProjectCard = ({ project, index, projects }) => {
+const ProjectCard = ({ project, index, projects, ...props }) => {
   const cardRef = useRef(null);
   const [viewActive, setViewActive] = useState(false);
 
@@ -55,6 +56,8 @@ const ProjectCard = ({ project, index, projects }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [current, setCurrent] = useState(index);
   const [direction, setDirection] = useState("right");
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded2, setIsLoaded2] = useState(false);
 
   useEffect(() => {
     const touchDevice = window.matchMedia("(pointer: coarse)").matches;
@@ -169,16 +172,36 @@ const ProjectCard = ({ project, index, projects }) => {
                   </div>
                   
                   <div className="flex flex-col gap-3 md:gap-5 xl:flex-1">
-                    <img
-                      src={activeProject.image1}
-                      alt={activeProject.title}
-                      className="w-full h-auto"
-                    />
-                    <img
-                      src={activeProject.image2}
-                      alt={activeProject.title}
-                      className="w-full h-auto"
-                    />
+                    <div className="w-full h-full">
+                      {!isLoaded && (
+                        <div className="relative h-full flex justify-center items-center">
+                          <DotLoader color="hsl(359 100% 65%)" size={40} />
+                        </div>)}
+                      <img
+                          src={activeProject.image1}
+                          alt={activeProject.title}
+                          loading="lazy"
+                          onLoad={()=>setIsLoaded(true)}
+                          className={cn('object-cover transition-opacity duration-500',
+                          isLoaded ? 'opacity-100' : 'opacity-0'
+                        )}
+                      />
+                    </div>
+                    <div className="w-full h-full">
+                      {!isLoaded2 && (
+                        <div className="relative h-full flex justify-center items-center">
+                          <DotLoader color="hsl(359 100% 65%)" size={40} />
+                        </div>)}
+                      <img
+                        src={activeProject.image2}
+                        alt={activeProject.title}
+                        loading="lazy"
+                        onLoad={()=>setIsLoaded2(true)}
+                        className={cn('object-cover transition-opacity duration-500',
+                          isLoaded2 ? 'opacity-100' : 'opacity-0'
+                        )}
+                      />
+                    </div>
                   </div>
 
                 </div>
@@ -201,7 +224,7 @@ const ProjectCard = ({ project, index, projects }) => {
       </Dialog.Root>
 
 
-      <div ref={cardRef}>
+      <div ref={cardRef} {...props} onClick={openModal}>
         <div className="project-container relative overflow-hidden rounded-xl">
           <img
             src={project.thumbnail}

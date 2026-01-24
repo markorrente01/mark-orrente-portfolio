@@ -33,7 +33,7 @@ const Skills = () => {
     // handle reanimate on state change to rerender new skills
     useEffect(() => {
       AOS.refresh();
-    }, [activeCategory]);
+    }, [activeCategory, filteredSkills]);
 
   return (
     <section>
