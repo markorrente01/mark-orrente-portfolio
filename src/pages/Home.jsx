@@ -13,7 +13,7 @@ const Home = () => {
     <div className="relative min-h-screen">
       <ScrollButton />
       <Navbar />
-      <main className='py-70 bg-bg-primary'>
+      <main className="py-70 bg-bg-primary">
         <HeroSec />
       </main>
       <About />
