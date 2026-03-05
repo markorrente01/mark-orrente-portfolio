@@ -3,6 +3,8 @@ import portfolioPicOne from '../../assets/images/portfolione.png';
 import portfolioPicTwo from '../../assets/images/portfoliotwo.png';
 import flintmallPicOne from '../../assets/images/flintmallone.png';
 import flintmallPicTwo from '../../assets/images/flintmalltwo.png';
+import impactIntelPicOne from '../../assets/images/impactIntelone.png'
+import impactIntelPicTwo from '../../assets/images/impactInteltwo.png'
 
 const projects = [
   {
@@ -48,8 +50,33 @@ const projects = [
             Users can register as personal or business accounts, manage listings, and interact securely. 
             The project also includes an admin dashboard for moderation, user management, and content control, 
             with full cross-browser compatibility and performance-focused UI/UX architecture.`
-}
+},
+{
+    role: "Frontend Developer",
+    thumbnail: impactIntelPicOne,
+    image1: impactIntelPicOne,
+    image2: impactIntelPicTwo,
+    title: "ImpactIntel – CSR Management Platform",
+    skills: [
+              "React.js ●",
+              "TypeScript ●",
+              "Role-Based Access Control ●",
+              "Dashboard Architecture ●",
+              "Task & Workflow Management ●",
+              "Evidence Documentation System ●",
+              "Data Visualization UI ●",
+              "Secure Authentication ●",
+              "Desktop and tablet screen only"
+    ],
+    year: "2026",
+    tags: ["TYPESCRIPT", "REACT"],
+    liveUrl: "https://impactintel-frontend.vercel.app/",
+    description: `ImpactIntel is a digital accountability and policy advocacy management platform designed to help civil society organizations coordinate research, campaigns, and institutional tasks with full transparency. 
 
+            The platform provides a secure role-based dashboard where organizations can assign responsibilities, track task progress, upload supporting documentation, and monitor advocacy outcomes in real time. 
+
+            Built with React and TypeScript, the system focuses on structured workflows, audit-friendly activity tracking, and scalable dashboard architecture. The goal is to enable evidence-informed policy advocacy while improving internal governance, collaboration, and organizational accountability across participating institutions.`
+}
 ];
 
 const Project = () => {

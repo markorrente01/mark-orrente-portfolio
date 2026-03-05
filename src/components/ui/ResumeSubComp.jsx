@@ -38,6 +38,7 @@ const Points = ({children, others})=>{
 }
 
 const bulletPoints = ['Leadership', 'Architecture', 'Strategy'];
+const bulletPoint_two = ['Architecture', 'Strategy'];
 
 const ResumeSubComp = () => {
   return (
@@ -74,7 +75,7 @@ const ResumeSubComp = () => {
               AshpotMicrosystems
             </SubHead>
             <Points others='w-27 border-none'>
-              2025 - present
+              2023 - present
             </Points>
 
             <P>
@@ -86,6 +87,48 @@ const ResumeSubComp = () => {
             <div className='flex gap-2'>
               {
                 bulletPoints.map((points, index)=>{
+                  return (
+                    <Points key={index} others='border-accent-primary/30'>{points}</Points>
+                  )
+                })
+              }
+            </div>
+      </div>
+    </div>
+
+    <div data-aos='zoom-in-right'>
+      <div  className={cn('mb-8 group relative overflow-hidden border border-accent-primary rounded-2xl py-4 px-5 md:px-7 md:py-6', 
+          'cardGradient expHover cardShadow')}>
+            <div className='w-0 group-hover:w-full transition-all duration-300 ease-out h-[4px] bg-accent-primary absolute inset-0'></div>
+            <div className='md:justify-between flex flex-col md:flex-row items-center'>
+                <div className={cn('bg-gradient-to-r from-accent-primary to-accent-primary/50',
+                     'flex justify-center items-center rounded-xl w-12 py-3.5 mb-4')}>
+                <GrPersonalComputer className='text-white w-5 h-5'/>
+                </div>
+                <ResumeHeader>
+                  CURRENT
+                </ResumeHeader>
+            </div>
+
+            <H3>
+              Frontend Developer (Volunteer)
+            </H3>
+            <SubHead>
+              Glix Financial Inc. (Fintech Startup) 
+            </SubHead>
+            <Points others='w-27 border-none'>
+              2025 - present
+            </Points>
+
+            <P>
+              Developing production-grade frontend applications using 
+              Next.js, React, and TypeScript within a strict monorepo 
+              architecture
+            </P>
+
+            <div className='flex gap-2'>
+              {
+                bulletPoint_two.map((points, index)=>{
                   return (
                     <Points key={index} others='border-accent-primary/30'>{points}</Points>
                   )
@@ -113,13 +156,13 @@ const ResumeSubComp = () => {
             </div>
 
             <H3>
-              Senior Frontend Developer
+              Frontend Developer
             </H3>
             <SubHead>
               Upwork.com
             </SubHead>
             <Points others='w-27 border-none'>
-              2025 - present
+              2021 - present
             </Points>
 
             <P others='mb-2'>
@@ -149,7 +192,7 @@ const ResumeSubComp = () => {
             'eduHover cardShadow hover:border-accent-primary')}>
               <div className='md:justify-between flex flex-col md:flex-row'>
                   <Points others='md:py-1 w-25 md:flex md:items-center md:justify-center border-none'>
-                    2022 - 2025
+                    2019 - 2023
                 </Points>
                 <SubHead>
                   BACHELOR
@@ -179,7 +222,7 @@ const ResumeSubComp = () => {
           'eduHover cardShadow hover:border-accent-primary')}>
             <div className='md:justify-between flex flex-col md:flex-row'>
                 <Points others='md:py-1 border-none w-16 md:flex md:items-center md:justify-center'>
-                  2025
+                  2022
               </Points>
               <SubHead>
                 CERTIFICATE

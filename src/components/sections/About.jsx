@@ -14,7 +14,7 @@ const About = () => {
         {
             icon: <BsBriefcase className={iconStyle}/>,
             heading: 'EXPERIENCE',
-            subHeading: '4+ Years'
+            subHeading: '5+ Years'
         },
         {
             icon: <IoSchoolOutline className={iconStyle}/>,

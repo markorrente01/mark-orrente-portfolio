@@ -9,6 +9,7 @@ const Skills = () => {
         'Tools & Workflow']
     const skillsInfo = [
         {name: 'React.js & Next.js', value: 96, category: 'Core Skills'},
+        {name: 'Typescript', value: 94, category: 'Core Skills'},
         {name: 'Javascript (ES6)', value: 97, category: 'Core Skills'},
         {name: 'HTML5 & CSS3', value: 95, category: 'Core Skills'},
         {name: 'Responsive Design', value: 95, category: 'Core Skills'},
@@ -16,10 +17,8 @@ const Skills = () => {
         {name: 'Tailwind CSS', value: 92, category: 'Core Skills'},
         {name: 'SCSS/SASS', value: 90, category: 'Styling & Ui'},
         {name: 'UI/UX Implementation', value: 95, category: 'Styling & Ui'},
-        {name: 'Cross-Browser Compatibility', value: 95, category: 'Styling & Ui'},
         {name: 'Git & GitHub', value: 93, category: 'Tools & Workflow'},
         {name: 'Node.js', value: 90, category: 'Tools & Workflow'},
-        {name: 'NPM & Yarn', value: 90, category: 'Tools & Workflow'},
         {name: 'Debugging & Error Handling', value: 89, category: 'Core Skills'},
         {name: 'Figma to Code', value: 94, category: 'Styling & Ui'},
         

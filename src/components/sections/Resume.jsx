@@ -24,9 +24,9 @@ const Resume = () => {
                 'hover:shadow-[0_5px_10px_2px_theme(colors.accent.primary/0.3)] hover:-translate-y-0.5 animate-[bounce_4s_infinite]'
             )}>
               <a
-              href='/Mark_Ogbonna_CV.pdf'
-              download="Mark_Ogbonna_CV.pdf"
-              className='block py-4'
+                href='/mark_ogbonna_s_resume.pdf'
+                download='mark_ogbonna_s_resume.pdf'
+                className='block py-4'
               >Download CV</a>
           </button>
       </div>

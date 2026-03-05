@@ -4,7 +4,6 @@ import { DotLoader } from "react-spinners";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { HiOutlineEye } from "react-icons/hi";
 import { MdOpenInNew } from "react-icons/md";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { cn } from "@/lib/Utils";
 
 // UI helpers
